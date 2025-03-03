@@ -1,0 +1,13 @@
+name: Lazy Status Check
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  lazy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Do nothing
+        run: echo "This is the laziest status check ever."
